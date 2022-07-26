@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Homepage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = "codepur";
 
