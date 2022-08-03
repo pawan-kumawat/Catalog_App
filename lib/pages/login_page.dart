@@ -17,15 +17,15 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: [
               Image.asset(
-                "assets/pic/login_image.png",
+                "assets/pic/hey.png.png",
                 fit: BoxFit.cover,
-                height: 200.0,
+                height: 250.0,
               ),
               SizedBox(
                 height: 20.0,
               ),
               Text(
-                "welcome $name",
+                "Welcome $name",
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -60,37 +60,40 @@ class _LoginPageState extends State<LoginPage> {
                       height: 20.0,
                     ),
 
-                    InkWell(
-                      onTap: () async {
-                        setState(() {
-                          changeButton = true;
-                        });
-
-                        await Future.delayed(Duration(seconds: 1));
-                        Navigator.pushNamed(context, Myroutes.homeRoute);
-                      },
-                      child: AnimatedContainer(
-                        duration: Duration(seconds: 1),
-                        width: changeButton ? 50 : 150,
-                        height: 50,
-                        alignment: Alignment.center,
-                        child: changeButton
-                            ? Icon(
-                                Icons.done,
-                                color: Colors.white,
-                              )
-                            : Text(
-                                "login",
-                                style: TextStyle(
+                    Material(
+                      color: Colors.deepPurple,
+                      borderRadius:
+                             BorderRadius.circular(changeButton ? 50 : 8),
+                      child: InkWell(
+                        
+                        onTap: () async {
+                          setState(() {
+                            changeButton = true;
+                          });
+                    
+                          await Future.delayed(Duration(seconds: 1));
+                          Navigator.pushNamed(context, Myroutes.homeRoute);
+                        },
+                        child: AnimatedContainer(
+                          duration: Duration(seconds: 1),
+                          width: changeButton ? 50 : 150,
+                          height: 50,
+                          alignment: Alignment.center,
+                          child: changeButton
+                              ? Icon(
+                                  Icons.done,
                                   color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                )
+                              : Text(
+                                  "login",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              ),
-                        decoration: BoxDecoration(
-                            color: Colors.deepPurple,
-                            borderRadius:
-                                BorderRadius.circular(changeButton ? 50 : 8)),
+                          
+                        ),
                       ),
                     )
                     // ElevatedButton(
