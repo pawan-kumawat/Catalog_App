@@ -9,7 +9,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        iconTheme: IconThemeData(color: Colors.black),
+        title: Text(
+          "Catalog App",
+          style: TextStyle(color: Colors.black),
+          ),
       ),
       body: Center(
         child: Container(
