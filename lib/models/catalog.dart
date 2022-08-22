@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-
 class CatalogModel {
   static final items = [
     Item(
@@ -29,4 +27,24 @@ class Item {
       required this.price,
       required this.colour,
       required this.imageUrl});
+
+  factory Item.fromMap(Map<String, dynamic> map) {
+    return Item(
+      id: map["id"],
+      name: map["name"],
+      decs: map["decs"],
+      price: map["price"],
+      colour: map["colour"],
+      imageUrl: map["imageUrl"],
+    );
+  }
+
+  toMap() => {
+        "id": id,
+        "name": name,
+        "decs": decs,
+        "price": price,
+        "colour": colour,
+        "imageUrl": imageUrl,
+      };
 }
