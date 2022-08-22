@@ -31,10 +31,11 @@ class _LoginPageState extends State<LoginPage> {
         color: Colors.white,
         child: SingleChildScrollView(
           child: Form(
-            key: _formKey,            child: Column(
+            key: _formKey,
+            child: Column(
               children: [
                 Image.asset(
-                  "assets/pic/hey.png.png",
+                  "assets/pic/hey.png",
                   fit: BoxFit.cover,
                   height: 250.0,
                 ),
