@@ -13,15 +13,14 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: MyTheme.lightTheme(context), 
-      debugShowCheckedModeBanner:false,
-          initialRoute:Myroutes.homeRoute,
-         routes: {
+      theme: MyTheme.lightTheme(context),
+      debugShowCheckedModeBanner: false,
+      initialRoute: Myroutes.homeRoute,
+      routes: {
         "/": (context) => LoginPage(),
-        Myroutes.homeRoute :(context) => HomePage(),
+        Myroutes.homeRoute: (context) => HomePage(),
         Myroutes.loginRoute: (context) => LoginPage()
       },
     );
   }
 }
- 
