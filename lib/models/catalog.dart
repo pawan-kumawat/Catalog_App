@@ -1,50 +1,46 @@
 class CatalogModel {
-  static final items = [
+  static List<Item> items = [
     Item(
-      id: 1,
-      name: " I Phone 13",
-      decs: "Apple Iphone 12th Generation ",
-      price: 999,
-      colour: "#33505a",
-      imageUrl:
-          "https://rukminim1.flixcart.com/image/832/832/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70",
-    )
+        id: 1,
+        name: "iPhone 13 ",
+        desc: "Apple iPhone 12th generation",
+        price: 999,
+        color: "#33505a",
+        image:
+            "https://www.reliancedigital.in/medias/Apple-iPhone-13-Smartphones-491997702-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMDkzMTN8aW1hZ2UvanBlZ3xpbWFnZXMvaGI5L2gxMS85ODc4MTAyNjA1ODU0LmpwZ3w5NGFjNjk3MDQ1ZmU2Y2Q1YmY0ZTljZWM4N2JkMjdhNzE0ZmVlZDQxYzJhNjExNDdkZjY1MmQwYjQ2YTc0NWJm ")
   ];
 }
 
 class Item {
-  final num id;
+  final int id;
   final String name;
-  final String decs;
+  final String desc;
   final num price;
-  final String colour;
-  final String imageUrl;
+  final String color;
+  final String image;
 
   Item(
       {required this.id,
       required this.name,
-      required this.decs,
+      required this.desc,
       required this.price,
-      required this.colour,
-      required this.imageUrl});
+      required this.color,
+      required this.image});
 
-  factory Item.fromMap(Map<String, dynamic> map) {
-    return Item(
-      id: map["id"],
-      name: map["name"],
-      decs: map["decs"],
-      price: map["price"],
-      colour: map["colour"],
-      imageUrl: map["imageUrl"],
-    );
-  }
-
+  factory Item.fromMap(Map<dynamic, dynamic> map) => Item(
+        id: map["id"],
+        name: map["name"],
+        desc: map["desc"],
+        price: map["price"],
+        color: map["color"],
+        image: map["image"],
+      );
   toMap() => {
         "id": id,
         "name": name,
-        "decs": decs,
+        "desc": desc,
         "price": price,
-        "colour": colour,
-        "imageUrl": imageUrl,
+        "color": color,
+        "image": image
       };
 }
