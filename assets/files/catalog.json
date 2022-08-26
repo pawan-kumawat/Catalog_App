@@ -10,11 +10,11 @@
         },
         {
             "id": 2,
-            "name": "Pixel 5",
-            "desc": "Google Pixel phone 5th generation",
-            "price": 699,
+            "name": "Realme 7 pro",
+            "desc": "Realme capture sharp,charge faster",
+            "price": 300,
             "color": "#00ac51",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd0JhwLvm_uLDLc-la7hK9WyVpe9naJFcebKfhcICiq2KtvXDePNAU_9QO06LPcQ0K0fLByc7m&usqp=CAc"
+            "image": "https://www.addmecart.com/wp-content/uploads/2021/11/sp43.1.jpg"
         },
         {
             "id": 3,
@@ -63,14 +63,6 @@
             "price": 899,
             "color": "#7c95eb",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNHd7FwarbxA1xdMFt24KazjcR4dWPH_t_T5dz4YNK1s7rJAQ8gOIuR_NRw6eeiQgFhbZ9sAN&usqp=CAc"
-        },
-        {
-            "id": 9,
-            "name": "Realme 9 pro+",
-            "desc": "Realme capture sharp,charge faster",
-            "price": 300,
-            "color": "#102b19",
-            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1645421922/Croma%20Assets/Communication/Mobiles/Images/248841_10_nnlegs.png/mxw_2256,f_auto"
         }
     ]
 }
