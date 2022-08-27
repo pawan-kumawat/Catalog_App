@@ -6,23 +6,23 @@
             "desc": "Apple iPhone 12th generation",
             "price": 999,
             "color": "#438ebf",
-            "image": "https://www.reliancedigital.in/medias/Apple-iPhone-13-Smartphones-491997702-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMDkzMTN8aW1hZ2UvanBlZ3xpbWFnZXMvaGI5L2gxMS85ODc4MTAyNjA1ODU0LmpwZ3w5NGFjNjk3MDQ1ZmU2Y2Q1YmY0ZTljZWM4N2JkMjdhNzE0ZmVlZDQxYzJhNjExNDdkZjY1MmQwYjQ2YTc0NWJm "
+            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1631776565/Croma%20Assets/Communication/Mobiles/Images/243463_7_zzy5gw.png/mxw_2256,f_auto"
         },
         {
             "id": 2,
-            "name": " I mac",
-            "desc": "New Imac 2021 Generation ",
-            "price": 1500,
+            "name": " I Mac",
+            "desc": " Core i5 7th Gen macOS All-in-One Desktop ",
+            "price": 1199,
             "color": "#00ac51",
-            "image": "https://www.reliancedigital.in/medias/iMac-MGPL3-8GB-512GB-Blue-MGPL3HN-A-Desktop-and-All-in-one-491996579-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2MDcxNXxpbWFnZS9qcGVnfGltYWdlcy9oNjcvaDZlLzk1NDIxMTc2NTQ1NTguanBnfDBjZWQ5MWJlNWVkYWNlYWMyNTkxYmIwMjBkMzBhMGM0MGQyYzM0YTIzNzQ0NTdkMzFlZTc3YTkwNWI4NGI3ODE"
+            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1606072817/Croma%20Assets/Computers%20Peripherals/Desktops/Images/8970007642142.png/mxw_2256,f_auto"
         },
         {
             "id": 3,
             "name": "M1 Macbook Air",
             "desc": "Apple Macbook air with apple silicon",
             "price": 1099,
-            "color": "#e0bfae",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOMstwtmLnjFb3NHiDJ_kcQnueNVH-rv_3ps96HZmXlFumKWaiBqq_L4Uoyx3iFiNTrXNEbyB&usqp=CAc"
+            "color": "#c9c9c9",
+            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1655189168/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_lgcfox.png/mxw_2256,f_auto"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "desc": "Sony Playstation 5th generation",
             "price": 500,
             "color": "#544ee4",
-            "image": "https://www.360globalgadgets.com/image/cache/catalog/Sony/Sony%20PlayStation/sony-playstation-ps5-console-500x500.jpg"
+            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1610108113/Croma%20Assets/Gaming/Gaming%20Consoles/Images/231644_2_kb8qrb.png/mxw_2256,f_auto"
         },
         {
             "id": 5,
@@ -38,31 +38,23 @@
             "desc": "Apple Aipods Pro 1st generation",
             "price": 200,
             "color": "#e3e4e9",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQROEs084z65psoo06zYl5R0tUzywOVKVQZzmzqCj3PDP1vVJTWv3gGwGMFENSy4qV4n7sEQjE&usqp=CAc"
+            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1651838583/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/251322_qd8g3s.png/mxw_2256,f_auto"
         },
         {
             "id": 6,
             "name": "iPad Pro",
-            "desc": "Apple iPad Pro 2020 edition",
+            "desc": "Apple iPad Pro 11 3rd Gen WiFi iOS",
             "price": 799,
             "color": "#f73984",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzUeRQ5uH7E3hpECib8qxdhfHv6SnUGT7mOsew_xiOoqRR7ZpdH-TQ4J6-HuIEfqHimYyPXWH&usqp=CAc"
+            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1619511576/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/234311_ohwyci.png/mxw_2256,f_auto"
         },
         {
             "id": 7,
-            "name": "Galaxy S21 Ultra",
-            "desc": "Samsung Galaxy S21 Ultra 2021 edition",
-            "price": 1299,
-            "color": "#1c1c1c",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT_PZcc0wicVYR992s5QCIDLYy8t-z-9kibTUdWZBN2sd86aaqdAJfhvxAwZNWV9wfdzDikpr1&usqp=CAc"
-        },
-        {
-            "id": 8,
-            "name": "Galaxy S21",
-            "desc": "Samsung Galaxy S21 2021 edition",
-            "price": 899,
+            "name": "Galaxy S22 Ultra",
+            "desc": "Samsung Galaxy S22 Ultra 5G ",
+            "price": 1399,
             "color": "#7c95eb",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNHd7FwarbxA1xdMFt24KazjcR4dWPH_t_T5dz4YNK1s7rJAQ8gOIuR_NRw6eeiQgFhbZ9sAN&usqp=CAc"
+            "image": "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1645520216/Croma%20Assets/Communication/Mobiles/Images/248914_10_bupef3.png/mxw_2256,f_auto"
         }
     ]
 }
