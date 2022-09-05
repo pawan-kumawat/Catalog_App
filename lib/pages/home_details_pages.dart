@@ -6,17 +6,16 @@ import 'package:velocity_x/velocity_x.dart';
 class HomeDetailPage extends StatelessWidget {
   final Item catalog;
 
-  const HomeDetailPage({super.key, required this.catalog})
-      : assert(catalog != null);
+  const HomeDetailPage({super.key, required this.catalog});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
       ),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.lightBlue[200],
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -29,7 +28,7 @@ class HomeDetailPage extends StatelessWidget {
                     MyTheme.darkBluishColor,
                   ),
                   shape: MaterialStateProperty.all(
-                    StadiumBorder(),
+                    const StadiumBorder(),
                   )),
               child: "Add To Cart".text.make(),
             ).wh(130, 50)
@@ -50,7 +49,7 @@ class HomeDetailPage extends StatelessWidget {
               arcType: VxArcType.CONVEY,
               edge: VxEdge.TOP,
               child: Container(
-                color: Colors.lightBlue[200],
+                color: Colors.white,
                 width: context.screenWidth,
                 child: Column(
                   children: [

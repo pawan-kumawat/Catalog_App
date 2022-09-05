@@ -5,7 +5,6 @@ import 'package:velocity_x/velocity_x.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/models/catalog.dart';
-import 'package:flutter_catalog/pages/home_page.dart';
 
 class CatalogList extends StatelessWidget {
   @override
@@ -14,7 +13,7 @@ class CatalogList extends StatelessWidget {
       shrinkWrap: true,
       itemCount: CatalogModel.items.length,
       itemBuilder: (context, index) {
-        final catalog = CatalogModel.items[index];
+        final catalog = CatalogModel.getByPosition(index);
         return InkWell(
             onTap: () => Navigator.push(
                   context,
@@ -33,9 +32,7 @@ class CatalogList extends StatelessWidget {
 class CatalogItem extends StatelessWidget {
   final Item catalog;
 
-  const CatalogItem({Key? key, required this.catalog})
-      : assert(catalog != null),
-        super(key: key);
+  const CatalogItem({Key? key, required this.catalog}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +65,7 @@ class CatalogItem extends StatelessWidget {
                           MyTheme.darkBluishColor,
                         ),
                         shape: MaterialStateProperty.all(
-                          StadiumBorder(),
+                          const StadiumBorder(),
                         )),
                     child: "Add To Cart".text.make(),
                   )

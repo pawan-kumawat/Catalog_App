@@ -17,7 +17,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final int days = 30;
 
-  final String name = "Codepur";
+  final String name = "MyProject";
 
   @override
   void initState() {
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 0));
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
     final decodedData = jsonDecode(catalogJson);
@@ -40,11 +40,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: MyTheme.creamColor,
+        backgroundColor: context.canvasColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, Myroutes.cartRoute),
-          backgroundColor: Colors.lightBlueAccent,
-          child: Icon(CupertinoIcons.cart),
+          backgroundColor: MyTheme.darkBluishColor,
+          child: const Icon(CupertinoIcons.cart),
         ),
         body: SafeArea(
           child: Container(
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                 if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
                   CatalogList().py16().expand()
                 else
-                  CircularProgressIndicator().centered().expand(),
+                  const CircularProgressIndicator().centered().expand(),
               ],
             ),
           ),
