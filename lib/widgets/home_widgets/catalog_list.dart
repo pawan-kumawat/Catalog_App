@@ -1,3 +1,4 @@
+import 'package:flutter_catalog/models/cart.dart';
 import 'package:flutter_catalog/pages/home_details_pages.dart';
 import 'package:flutter_catalog/widgets/home_widgets/catalog_image.dart';
 import 'package:flutter_catalog/widgets/themes.dart';
@@ -58,17 +59,7 @@ class CatalogItem extends StatelessWidget {
                 buttonPadding: EdgeInsets.zero,
                 children: [
                   "\$${catalog.price}".text.bold.xl.make(),
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(
-                          MyTheme.darkBluishColor,
-                        ),
-                        shape: MaterialStateProperty.all(
-                          const StadiumBorder(),
-                        )),
-                    child: "Add To Cart".text.make(),
-                  )
+                  _AddToCart(catalog: catalog),
                 ],
               ).pOnly(right: 6.0)
             ],
@@ -76,5 +67,46 @@ class CatalogItem extends StatelessWidget {
         ],
       ),
     ).white.roundedLg.square(130).make().py16();
+  }
+}
+
+class _AddToCart extends StatefulWidget {
+  final Item catalog;
+  const _AddToCart({
+    Key? key,
+    required this.catalog,
+  }) : super(key: key);
+
+  @override
+  State<_AddToCart> createState() => _AddToCartState();
+}
+
+class _AddToCartState extends State<_AddToCart> {
+  final _cart = CartModel();
+
+  @override
+  Widget build(BuildContext context) {
+    bool IsInCart = _cart.items.contains(widget.catalog);
+    false;
+    return ElevatedButton(
+      onPressed: () {
+        if (!IsInCart) {
+          IsInCart = IsInCart.toggle();
+          final catalog = CatalogModel();
+
+          _cart.catalog = catalog;
+          _cart.add(widget.catalog);
+          setState(() {});
+        }
+      },
+      style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(
+            MyTheme.darkBluishColor,
+          ),
+          shape: MaterialStateProperty.all(
+            const StadiumBorder(),
+          )),
+      child: IsInCart ? Icon(Icons.done) : "Add To Cart".text.make(),
+    );
   }
 }
